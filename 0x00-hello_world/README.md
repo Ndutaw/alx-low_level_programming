@@ -9,3 +9,4 @@ generates the assembly code of C code and save it in an output file>
 the C file will be saved in the variable 
 The output file should be named the same as the C file but with the extension .s instead of .c
 compiles a C file and creates an executable name cisfun and will be saved in the variable 
+C program that prints Programming is like building a multilingual puzzle followed by a new line, use function puts and program should end with the value 0
