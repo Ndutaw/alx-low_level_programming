@@ -5,3 +5,6 @@ compiles a C file but does not link, which is saved in the variable CFILE and ou
 generates the assmebly code of a C code and save it in an output file>
 the C file name will be savd in the variable CFILE
 The output file should be named the same as the C file but with the extension .s instead of .c
+generates the assembly code of C code and save it in an output file>
+the C file will be saved in the variable 
+The output file should be named the same as the C file but with the extension .s instead of .c
