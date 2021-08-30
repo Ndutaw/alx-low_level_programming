@@ -2,8 +2,7 @@
 /**
  * main - Main function of my project
  *
- *
- * Return - return the value 0
+ * Return: return the value 0
  */
 int main(void)
 {
