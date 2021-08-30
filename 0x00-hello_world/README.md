@@ -10,3 +10,4 @@ the C file will be saved in the variable
 The output file should be named the same as the C file but with the extension .s instead of .c
 compiles a C file and creates an executable name cisfun and will be saved in the variable 
 C program that prints Programming is like building a multilingual puzzle followed by a new line, use function puts and program should end with the value 0
+prints exactly -with proper grammar but the outcome is a pice of art.use funtion printf,program shpuld return 0
