@@ -5,7 +5,7 @@
  * Return: no return
  *
  */
-int main(void)
+void print_alphabet(void)
 {
 	int i;
 	for (i = 97; i <= 122; i++)
@@ -13,6 +13,4 @@ int main(void)
                _putchar (i);
 	}
 	 _putchar ('\n');
-	 return (0);
 }
-
