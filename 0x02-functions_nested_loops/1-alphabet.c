@@ -1,15 +1,20 @@
 #include "main.h"
+
 /**
- * main - main function of the project
+ * print_alphabet - prints alphabets in lower case
  *
  * return: return 0
  */
 void print_alphabet(void)
 {
 	int i;
+
 	for (i = 97; i <= 122; i++)
+
 	{
 		_putchar(i);
+
 	}
 	_putchar('\n');
+
 }
