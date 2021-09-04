@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <ctype.h>
 /**
- * Main - program to print alphabet followed by new line
+ * main - program to print alphabet followed by new line
  *
- * return: return 0
+ * Return: return 0
  */
 int main(void)
 {
@@ -11,7 +11,7 @@ int main(void)
 
 	for (i = 97; 1 <= 122; i++)
 	{
-		i = tolower(i);	
+		i = tolower(i);
 		putchar(i);
 
 	}
