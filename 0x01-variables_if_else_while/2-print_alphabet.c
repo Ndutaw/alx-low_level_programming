@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 /**
- * main - entry point of the program
+ * Main - program to print alphabet followed by new line
  *
  * return: return 0
  */
@@ -11,8 +11,7 @@ int main(void)
 
 	for (i = 97; 1 <= 122; i++)
 	{
-		i = tolower(i);
-		
+		i = tolower(i);	
 		putchar(i);
 
 	}
