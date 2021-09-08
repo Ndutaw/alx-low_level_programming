@@ -17,4 +17,11 @@ void swap_int(int *a, int *b)
 		swap_int(&a, &b);
 		_putchar ("a=%d, b=%d\n", a, b);
 	}
+	void swap (int *a, int *b)
+	{
+		int temp;
+		temp = *a;
+		*a = *b;
+		*b = temp;
+	}
 }
