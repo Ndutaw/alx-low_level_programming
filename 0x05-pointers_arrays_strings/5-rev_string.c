@@ -4,17 +4,12 @@
  *@s: String to reverse
  *Return: Nothing
  */
-void rev_string(char *s)
+void rev_string(char *)
 {
-	int index = -1, len = 0;
-	len = _strlen(s);
-
-	while (len-- > index++)
-		int i = 0, length;
+	int i = 0, length;
 	length = _strlen(s) - 1;
 	while (length > i)
 	{
-		swap_char(s + len, s + index);
 		swap_char(s + length, s + i);
 		i++;
 		length--;
@@ -25,7 +20,8 @@ void rev_string(char *s)
 /**
  *_strlen - returns the length of a string
  *@s: string
- *Return: returns lenght;
+ *Return: returns length;
+ *
  */
 int _strlen(char *s)
 {
@@ -35,6 +31,7 @@ int _strlen(char *s)
 		inc++;
 	return (inc);
 }
+
 /**
  *swap_char - swap two characters
  *@a: first character
