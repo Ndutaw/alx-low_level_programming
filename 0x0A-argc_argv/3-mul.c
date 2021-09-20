@@ -23,5 +23,5 @@ int main(int argc, char *argv[])
 	mul = i * j;
 
 	printf(%d\n", mul);
-	return (0);
+	return (1);
 }
