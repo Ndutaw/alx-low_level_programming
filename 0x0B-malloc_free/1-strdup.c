@@ -8,7 +8,7 @@
  * *
  * *Return: NULL in case of error, pointer to allocated
  * *space
- * */
+ */
 
 char *_strdup(char *str)
 {
