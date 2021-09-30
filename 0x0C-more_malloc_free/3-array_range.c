@@ -6,7 +6,7 @@
  * * @max: lagrest value in the array
  * *
  * * Return: pointer to the address of the memory block
- * */
+ */
 
 int *array_range(int min, int max)
 {
