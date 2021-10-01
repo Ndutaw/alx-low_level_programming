@@ -6,7 +6,7 @@
  * *a string
  * *@str: string to be counted
  * *Return: returns length of string
- * */
+ */
 int _strlen(char *str)
 {
 	int len = 0;
@@ -23,7 +23,7 @@ int _strlen(char *str)
  * *@dest:buffer storing string copy
  * *@src: buffer storing string to copy
  * *Return:returns copied string
- * */
+ */
 char *_strcopy(char *dest, char *src)
 {
 	int index = 0;
@@ -36,8 +36,6 @@ char *_strcopy(char *dest, char *src)
 }
 
 
-
-
 /**
  * *new_dog - creates a new dog
  * *@name: name of new dog
@@ -45,32 +43,19 @@ char *_strcopy(char *dest, char *src)
  * *@owner: owner of new dog
  * *Return: returns NULL in case
  * *of failure
- * */
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *doggo;
-
-if (name == NULL || age < 0 || owner == NULL)
+	
+	if (name == NULL || age < 0 || owner == NULL)
 	return (NULL);
-
+	
 	doggo = malloc(sizeof(dog_t));
 	if (doggo == NULL)
 	return (NULL);
 
-	doggo->name = malloc(sizeof(char) * (_strlen(name) + 1));
-	if (doggo->name == NULL)
-{
-	free(doggo);
-	return (NULL);
-}
-
-doggo->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
-if (doggo->owner == NULL)
-{
-	free(doggo->name);
-	free(doggo);
-	return (NULL);
-}
+doggo->name = malloc(sizeof(char) * (_strlen(name) + 1));
 if (doggo->name == NULL)
 {
 	free(doggo);
