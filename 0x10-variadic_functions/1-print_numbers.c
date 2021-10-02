@@ -1,22 +1,32 @@
-#ifndef VARIADIC_FUNCTIONS_H
-#define VARIADIC_FUNCTIONS_H
+#include "variadic_functions.h"
 
-#include <stdarg.h>
-#include <stdio.h>
+/**
+ * *print_numbers - prints numbers followed by
+ * *new line
+ * *@separator: string to be printed between numbers
+ * *@n: number of integer to be passed
+ * *
+ * *Return: nothing
+ */
 
-typedef struct printer{
-	char *symbol;
-	void (*print)(va_list arg);
-} printer_t;
+void print_numbers(const char *separator, const unsigned int n, ...)
+{
+
+	va_list li;
+	unsigned int i;
+
+	va_start(li, n);
+
+	for (i = 0; i < n; i++)
+	{
 
 
-int sum_them_all(const unsigned int n, ...);
-void print_numbers(const char *separator, const unsigned int n, ...);
-void print_strings(const char *separator, const unsigned int n, ...);
-void print_char(va_list arg);
-void print_int(va_list arg);
-void print_float(va_list arg);
-void print_string(va_list arg);
-void print_all(const char * const format, ...);
+		printf("%d", va_arg(li, int));
 
-#endif
+		if (i != (n - 1) && separator != NULL)
+			printf("%s", separator);
+	}
+	printf("\n");
+	va_end(li);
+
+}
